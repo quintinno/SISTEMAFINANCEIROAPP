@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Realizar Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form>
+    <ion-item lines="full">
+      <ion-label>Usuário</ion-label>
+      <ion-input type="text" #usuario required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label>Senha</ion-label>
+      <ion-input type="password" #senha required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" (click)="realizarLogin(usuario, senha)" expand="block">Acessar</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" (click)="redirecionarTelaRegistrarUsuario()" color="warning" expand="block">Registrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

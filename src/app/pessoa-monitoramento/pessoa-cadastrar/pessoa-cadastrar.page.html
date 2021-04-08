@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pessoa Cadastrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list lines="full">
+    <form [formGroup]="pessoa" (ngSubmit)="cadatrarPessoa()">
+
+      <ion-item>
+        <ion-label position="floating"> Nome </ion-label>
+        <ion-input type="text" formControlName="nome" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"> E-mail </ion-label>
+        <ion-input type="text" formControlName="email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"> Telefone </ion-label>
+        <ion-input type="text" formControlName="telefone" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"> Observação </ion-label>
+        <ion-textarea type="text" formControlName="observacao" required></ion-textarea>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" shape="block"> Cadastrar Pessoa </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </form>
+  </ion-list>
+
+</ion-content>

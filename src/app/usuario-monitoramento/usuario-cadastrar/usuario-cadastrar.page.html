@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrar Usuário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form>
+    <ion-item lines="full">
+      <ion-label>Usuário</ion-label>
+      <ion-input type="text" #usuario required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label>Senha</ion-label>
+      <ion-input type="password" #senha required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" (click)="cadastrarUsuario(usuario, senha)" expand="block">Registrar Usuário</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

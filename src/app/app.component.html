@@ -1,0 +1,20 @@
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/pessoa-monitoramento">
+      <ion-icon name="bar-chart-outline"></ion-icon>
+      <ion-label>Monitoramento</ion-label>
+    </ion-tab-button>
+    <ion-tab-button routerLinkActive="tab-selected" routerLink="/pessoa-cadastrar">
+      <ion-icon name="grid-outline"></ion-icon>
+      <ion-label>Gerenciador</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="about" routerLink="/usuario-cadastrar">
+      <ion-icon name="settings-outline"></ion-icon>
+      <ion-label>Configurações</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
